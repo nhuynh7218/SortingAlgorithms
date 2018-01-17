@@ -1,5 +1,5 @@
 
-public class SortingStuff {
+public class SwapMethods {
 
 public static void swapInt(int[]array, int index1, int index2)
 {
@@ -7,5 +7,6 @@ public static void swapInt(int[]array, int index1, int index2)
 	array[index1] = array[index2];
 	array[index2] = x;
 }
+
 
 }
