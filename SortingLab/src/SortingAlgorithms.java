@@ -2,17 +2,18 @@
 public class SortingAlgorithms {
 	public static void bubbleSort(String [] list1)
 	{
-		int swapCount = 0;
+		int swapCount = 1;
 		while(swapCount > 0)
 		{
-			int len = list1.length;
-			for(int i = len; i >= 0; i++)
+			int len = list1.length-1;
+			swapCount = 0;
+			for(int i = 0; i <= len ; i++)
 			{
 				int var1 = list1[i].compareTo(list1[i+1]);
 				if (var1 > 0)
 				{
 					SwapMethods.swapString(list1, i, i+1);
-					swapCount--;
+					swapCount++;
 				}
 			}
 		}
