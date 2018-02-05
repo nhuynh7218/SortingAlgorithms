@@ -41,6 +41,17 @@ public class SortingAlgorithms {
 	
 	public static void insertionSort(int[]list1)
 	{
-		
+		int len = list1.length;
+		for(int i = 1; i < len; i++)
+		{
+			int pos = list1[i];
+			int j = i-1;
+			while((i > 1)&&(list1[j] > pos))
+			{
+				SwapMethods.swapInt(list1, i, j);
+				j--;
+			}
+			list1[j+1] = pos;
+		}
 	}
 }
